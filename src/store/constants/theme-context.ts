@@ -1,0 +1,1 @@
+export const UPDATE_THEME: Symbol = Symbol('UPDATE_THEME');

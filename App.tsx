@@ -1,30 +1,18 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-} from 'react-native';
-import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider } from 'react-redux';
 import { store } from '@src/store/store';
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Navigation from '@src/components/navigation/Navigation';
-
-import { View, Text } from 'react-native';
+import Startup from '@src/pages/startup/Startup';
 
 const App = () => {
   return (
-    <>
+    <Provider store={store}>
       <SafeAreaProvider>
-        <Provider store={store}>
-          <StatusBar barStyle="light-content" />
-          
-          <Navigation />
-        </Provider>
+        <Startup />
       </SafeAreaProvider>
-    </>
+    </Provider>
   );
 };
 

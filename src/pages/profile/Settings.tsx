@@ -1,11 +1,16 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Button, View, Text, SafeAreaView } from 'react-native';
 
-const Settings = ({}) => {
+const Settings = ({ navigation }: any) => {
   return (
-    <View>
-      <Text>SEttings</Text>
-    </View>
+    <SafeAreaView>
+      <Button title="Back" onPress={() => {
+        navigation.goBack();
+      }} />
+      <View>
+        <Text>SEttings</Text>
+      </View>
+    </SafeAreaView>
   );
 };
 
