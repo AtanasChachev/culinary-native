@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "364505325075",
+    "project_id": "culinary-app-80a94",
+    "storage_bucket": "culinary-app-80a94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364505325075:android:cbc60fbc761f32f60429e6",
+        "android_client_info": {
+          "package_name": "com.culinarynative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364505325075-7abnngfh8jlfs1t9746tuq3smpsjd5c2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxCMLeysz3NlN69mN_fIF3DcqyhvdKITg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364505325075-7abnngfh8jlfs1t9746tuq3smpsjd5c2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
