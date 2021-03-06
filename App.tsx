@@ -4,24 +4,26 @@ import {
   SafeAreaView,
   StatusBar,
 } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context';
 import { Provider } from 'react-redux';
 import { store } from '@src/store/store';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Navigation from '@src/components/navigation/Navigation';
+
+import { View, Text } from 'react-native';
 
 const App = () => {
   return (
     <>
-      <Provider store={store}>
-        <NavigationContainer>
-          <StatusBar barStyle="dark-content" />
-          <SafeAreaProvider>
-            
-          </SafeAreaProvider>
-        </NavigationContainer>
-      </Provider>
+      <SafeAreaProvider>
+        <Provider store={store}>
+          <StatusBar barStyle="light-content" />
+          
+          <Navigation />
+        </Provider>
+      </SafeAreaProvider>
     </>
   );
 };
